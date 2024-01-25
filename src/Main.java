@@ -14,8 +14,8 @@ public class Main {
         double g=9.8;
         double P=plotnosty*g*H;
         double v=Math.sqrt((2*(P))/plotnosty);
-        double l=D*0.3;
-        int N=(int)Math.ceil((Math.PI*H)/(nozzleDiameter*l));
+        double l=D*0.5;
+        int N=(int)Math.ceil((Math.PI*D)/(nozzleDiameter*l));
         double h=H-l;
         double angle=Math.atan(h/(D/2));
         double Q=(N*Math.PI*Math.pow(nozzleDiameter,2)*v)/4;
